@@ -10,7 +10,7 @@ int main()
     if ((fp = fopen(name,"r")) == NULL)
     {
         printf("Can't open %s \n", name);
-        exit(1);
+        exit(-1);
     }
     while ((ch = getc(fp)) != EOF)
     {
